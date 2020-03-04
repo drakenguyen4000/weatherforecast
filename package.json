@@ -1,5 +1,5 @@
 {
-  "homepage": "http://drakenguyen4000.github.io/weatherforecast",
+  "homepage": "https://drakenguyen4000.github.io/weatherforecast",
   "name": "myforecast",
   "version": "0.1.0",
   "private": true,
@@ -12,11 +12,11 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
