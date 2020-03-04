@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/weatherforecast/static/css/main.449542e6.chunk.css",
+    "main.js": "/weatherforecast/static/js/main.a16c6b80.chunk.js",
+    "main.js.map": "/weatherforecast/static/js/main.a16c6b80.chunk.js.map",
+    "runtime-main.js": "/weatherforecast/static/js/runtime-main.889f3e3b.js",
+    "runtime-main.js.map": "/weatherforecast/static/js/runtime-main.889f3e3b.js.map",
+    "static/js/2.289e851d.chunk.js": "/weatherforecast/static/js/2.289e851d.chunk.js",
+    "static/js/2.289e851d.chunk.js.map": "/weatherforecast/static/js/2.289e851d.chunk.js.map",
+    "index.html": "/weatherforecast/index.html",
+    "precache-manifest.5bf24c195bf92fdef7ce1cd56ce97005.js": "/weatherforecast/precache-manifest.5bf24c195bf92fdef7ce1cd56ce97005.js",
+    "service-worker.js": "/weatherforecast/service-worker.js",
+    "static/css/main.449542e6.chunk.css.map": "/weatherforecast/static/css/main.449542e6.chunk.css.map",
+    "static/js/2.289e851d.chunk.js.LICENSE.txt": "/weatherforecast/static/js/2.289e851d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/weatherforecast/static/media/thunderstorm.1e2351c0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.889f3e3b.js",
+    "static/js/2.289e851d.chunk.js",
+    "static/css/main.449542e6.chunk.css",
+    "static/js/main.a16c6b80.chunk.js"
+  ]
+}
