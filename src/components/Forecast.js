@@ -1,4 +1,3 @@
-import "./style.css";
 import React from "react";
 
 const icons = `https://www.metaweather.com/static/img/weather/png/`;
