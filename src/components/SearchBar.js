@@ -15,7 +15,7 @@ class SearchBar extends React.Component {
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
             <label>Search City</label>
-            <input type="text" value={this.state.term} onChange={ event => this.setState({term: event.target.value})} ></input>
+            <input placeholder="Los Angeles, New York, Paris, London, Cairo, Tokyo, etc." type="text" value={this.state.term} onChange={ event => this.setState({term: event.target.value})} ></input>
           <p className="copyright">&copy; Designed by Drake Nguyen 2020. Powered by <a class="metaweather" href="https://www.metaweather.com/"> MetaWeather </a> API.</p>
           </div>
         </form>
