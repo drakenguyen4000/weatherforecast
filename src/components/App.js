@@ -9,10 +9,10 @@ class App extends React.Component {
     
     onSearchSubmit = async (event) => {
             try {
-                const result = await fetch (`/api/location/search/?query=${event}`);
+                const result = await fetch (`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${event}`);
                 const location_rep = await result.json();
                 const cur_woeid = location_rep[0].woeid;
-                const woeid_rep = await fetch (`/api/location/${cur_woeid}/`);
+                const woeid_rep = await fetch (`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${cur_woeid}/`);
                 const data = await woeid_rep.json();
                 this.setState({ forecasting: data});
             } catch(error) {
