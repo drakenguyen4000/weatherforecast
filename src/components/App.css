@@ -18,6 +18,16 @@ body {
   height: 100vh;
 }
 
+.metaweather {
+  color: white;
+  text-decoration: underline;
+}
+
+.metaweather:visited {
+  color: white;
+  text-decoration: underline;
+}
+
 h1 {
   width: 100%;
   margin: 0;
