@@ -79,35 +79,45 @@ const Forecast = props => {
       <div className="fiveday">
         <div className={`ui card ${mybackground[0]}`}>
           <h1 className="day">{mydates[0]}</h1>
-          <img className="weather_icon" src={`${icons}${forecast[0].weather_state_abbr}.png`} alt="weather_img"></img>
+          <div>
+            <img className="weather_icon" src={`${icons}${forecast[0].weather_state_abbr}.png`} alt="weather_img"></img>
+          </div>
           <h2>{forecast[0].weather_state_name}</h2>
           <h1>H: {math(forecast[0].max_temp)}<sup>o</sup>F</h1>
           <h1>L: {math(forecast[0].min_temp)}<sup>o</sup>F</h1>
         </div>
         <div className={`ui card ${mybackground[1]}`}>
           <h1 className="day">{mydates[1]}</h1>
-          <img className="weather_icon" src={`${icons}${forecast[1].weather_state_abbr}.png`} alt="weather_img"></img>
+          <div>
+            <img className="weather_icon" src={`${icons}${forecast[1].weather_state_abbr}.png`} alt="weather_img"></img>
+          </div>  
           <h2>{forecast[1].weather_state_name}</h2>
           <h1>H: {math(forecast[1].max_temp)}<sup>o</sup>F</h1>
           <h1>L: {math(forecast[1].min_temp)}<sup>o</sup>F</h1>
         </div>
         <div className={`ui card ${mybackground[2]}`}>
           <h1 className="day">{mydates[2]}</h1>
-          <img className="weather_icon" src={`${icons}${forecast[2].weather_state_abbr}.png`} alt="weather_img"></img>
+          <div>
+            <img className="weather_icon" src={`${icons}${forecast[2].weather_state_abbr}.png`} alt="weather_img"></img>
+          </div>  
           <h2>{forecast[2].weather_state_name}</h2>
           <h1>H: {math(forecast[2].max_temp)}<sup>o</sup>F</h1>
           <h1>L: {math(forecast[2].min_temp)}<sup>o</sup>F</h1>
         </div>
         <div className={`ui card ${mybackground[3]}`}>
           <h1 className="day">{mydates[3]}</h1>
-          <img className="weather_icon" src={`${icons}${forecast[3].weather_state_abbr}.png`} alt="weather_img"></img>
+          <div>
+            <img className="weather_icon" src={`${icons}${forecast[3].weather_state_abbr}.png`} alt="weather_img"></img>
+          </div>  
           <h2>{forecast[3].weather_state_name}</h2>
           <h1>H: {math(forecast[3].max_temp)}<sup>o</sup>F</h1>
           <h1>L: {math(forecast[3].min_temp)}<sup>o</sup>F</h1>
         </div>
         <div className={`ui card ${mybackground[4]}`}>
           <h1 className="day">{mydates[4]}</h1>
-          <img className="weather_icon" src={`${icons}${forecast[4].weather_state_abbr}.png`} alt="weather_img"></img>
+          <div>
+            <img className="weather_icon" src={`${icons}${forecast[4].weather_state_abbr}.png`} alt="weather_img"></img>
+          </div>  
           <h2>{forecast[4].weather_state_name}</h2>
           <h1>H: {math(forecast[4].max_temp)}<sup>o</sup>F</h1>
           <h1>L: {math(forecast[4].min_temp)}<sup>o</sup>F</h1>
