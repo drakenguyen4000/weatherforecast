@@ -18,12 +18,12 @@ body {
   height: 100vh;
 }
 
-.metaweather {
+.link {
   color: white;
   text-decoration: underline;
 }
 
-.metaweather:visited {
+.link:visited {
   color: white;
   text-decoration: underline;
 }
