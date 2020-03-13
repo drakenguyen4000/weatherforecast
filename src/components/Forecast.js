@@ -4,7 +4,7 @@ const icons = `https://www.metaweather.com/static/img/weather/png/`;
 
 const Forecast = props => {
   if (!props.weather || !props.weather.parent) {
-    return <h2>Please enter a major city...</h2>;
+    return <h2>Data only covers major cities. My Location feature will find the closes city with data.</h2>;
   }
 
   const overview = props.weather;
@@ -38,6 +38,9 @@ const Forecast = props => {
       case "Thunderstorm":
         mybackground.push("thunderstorm");
         break;
+      case "Thunder":
+        mybackground.push("thunderstorm");
+        break;  
       case "Heavy Rain":
         mybackground.push("rain");
         break;

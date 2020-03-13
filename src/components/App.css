@@ -28,7 +28,7 @@ body {
   text-decoration: underline;
 }
 
-h1 {
+.appName {
   width: 100%;
   margin: 0;
 }
@@ -56,13 +56,16 @@ h2 {
   display: flex;
 }
 
-.ui .button  {
-  display: flex;
+.ui .button {
   color: white;
   background: rgb(56, 102, 155);
   border: 1px solid white;
   white-space: nowrap;
   font-size: 1.1rem;
+}
+
+.ui .submit {
+  margin-left: 1%;
 }
 
 /*----Five Day Forecast----*/
@@ -230,6 +233,13 @@ h2 {
     font-size: 0.8rem;
   }
   .ui .button {
-    font-size: .7rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /*firefox iphone 5 se width issue fix*/
+  #searchfield {
+    width: 72%;
   }
 }

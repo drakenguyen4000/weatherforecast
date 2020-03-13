@@ -30,7 +30,7 @@ class Search extends React.Component {
     return (
       <div className="ui segment">
         <div className="wrapper">
-          <h1>Weather Forecast</h1>
+          <h1 className="appName">Weather Forecast</h1>
           <button className="ui button" onClick={this.mySearchSubmit}>
             <i className="crosshairs icon"></i>My Location
           </button>
@@ -38,7 +38,9 @@ class Search extends React.Component {
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
             <label>Search by Major City</label>
-            <input placeholder="Los Angeles, New York, Paris, London, Cairo, Tokyo, etc." type="text" value={this.state.term} onChange={ event => this.setState({term: event.target.value})} ></input>
+            <div className="wrapper">
+                <input id="searchfield" placeholder="Los Angeles, New York, Paris, London, Cairo, Tokyo, etc." type="text" value={this.state.term} onChange={ event => this.setState({term: event.target.value})} ></input><div class="ui submit button" onClick={this.onFormSubmit}>Search</div>
+            </div>
             <p className="copyright">&copy; Designed by <a className="link" href="https://drakenguyen4000.github.io/portfolio/">Drake
             Nguyen 2020</a>. Powered by <a className="link" href="https://www.metaweather.com/"> MetaWeather </a> API.</p>
           </div>
