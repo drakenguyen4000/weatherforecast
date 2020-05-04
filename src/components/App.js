@@ -3,16 +3,15 @@ import React from 'react';
 import Search from './Search';
 import Forecast from './Forecast';
 
+const api_key = process.env.REACT_APP_API_KEY;
+
 class App extends React.Component {
     state = { forecasting: {} };
     
     onSearchSubmit = async (term) => {
             try {
-                const result = await fetch (`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${term}`);
-                const location_rep = await result.json();
-                const cur_woeid = location_rep[0].woeid;
-                const woeid_rep = await fetch (`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${cur_woeid}/`);
-                const data = await woeid_rep.json();
+                let result = await fetch (`https://api.weatherbit.io/v2.0/forecast/daily?city=${term}&key=${api_key}`);
+                let data = await result.json();
                 this.setState({ forecasting: data});
             } catch(error) {
                 alert('Not found. Please enter another city.');
@@ -21,13 +20,9 @@ class App extends React.Component {
 
     onLocation = async (lat, lon) => {
         try {
-            // console.log(lat, lon);
-            const result = await fetch (`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${lat},${lon}`);
-            const location_rep = await result.json();
-            const cur_woeid = location_rep[0].woeid;
-            const woeid_rep = await fetch (`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${cur_woeid}/`);
-            const data = await woeid_rep.json();
-            this.setState({ forecasting: data});
+            let mylocation = await fetch (`https://api.weatherbit.io/v2.0/forecast/daily?&lat=${lat}&lon=${lon}&key=${api_key}`);
+                let data = await mylocation.json();
+                this.setState({ forecasting: data});
         } catch(error) {
             alert('Not found. Please search by field.');
         }

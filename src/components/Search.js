@@ -3,12 +3,12 @@ import React from "react";
 class Search extends React.Component {
   state = {term: '', lat: null, lon: null}
 
-  onFormSubmit = (event) => {
+  onFormSubmit = event => {
     event.preventDefault();
     this.props.runMySubmit(this.state.term);
   }
 
-  onMySearch() {
+  onMySearch = () => {
     this.props.runMyLocation(this.state.lat, this.state.lon);
   }
 
@@ -37,12 +37,12 @@ class Search extends React.Component {
         </div>
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
-            <label>Search by Major City</label>
+            <label>Search by City</label>
             <div className="wrapper">
-                <input id="searchfield" placeholder="Los Angeles, New York, Paris, London, Cairo, Tokyo, etc." type="text" value={this.state.term} onChange={ event => this.setState({term: event.target.value})} ></input><div class="ui submit button" onClick={this.onFormSubmit}>Search</div>
+                <input id="searchfield" placeholder="Los Angeles, New York, Paris, London, Cairo, Tokyo, etc." type="text" value={this.state.term} onChange={ event => this.setState({term: event.target.value})} ></input><div className="ui submit button" onClick={this.onFormSubmit}>Search</div>
             </div>
             <p className="copyright">&copy; Designed by <a className="link" href="https://drakenguyen4000.github.io/portfolio/">Drake
-            Nguyen 2020</a>. Powered by <a className="link" href="https://www.metaweather.com/"> MetaWeather </a> API.</p>
+            Nguyen 2020</a></p>
           </div>
         </form>
       </div>
